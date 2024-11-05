@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursach.AddNomer">
+   <children>
+      <Label layoutX="159.0" layoutY="41.0" text="Добавление номера отеля">
+         <font>
+            <Font name="Palatino Linotype" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idNum" layoutX="238.0" layoutY="101.0" promptText="Номер комнаты" />
+      <TextField fx:id="idFloor" layoutX="238.0" layoutY="233.0" promptText="Этаж" />
+      <TextField fx:id="idCost" layoutX="238.0" layoutY="149.0" promptText="Стоимость проживания" />
+      <TextField fx:id="id_photo" layoutX="277.0" layoutY="290.0" />
+      <Button layoutX="112.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleChoosePhoto" style="-fx-background-color: #0021fa;" text="Добавить изображение" textFill="WHITE">
+         <font>
+            <Font name="Palatino Linotype Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="save" layoutX="374.0" layoutY="338.0" mnemonicParsing="false" style="-fx-background-color: #0021fa;" text="Сохранить" textFill="WHITE">
+         <font>
+            <Font name="Palatino Linotype Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="exit" layoutX="485.0" layoutY="338.0" mnemonicParsing="false" style="-fx-background-color:#0021fa;" text="Выход" textFill="WHITE">
+         <font>
+            <Font name="Palatino Linotype Bold" size="12.0" />
+         </font></Button>
+      <ComboBox fx:id="idStat" layoutX="238.0" layoutY="187.0" prefWidth="150.0" promptText="Статус номера" />
+      <ImageView fitHeight="124.0" fitWidth="123.0" layoutX="451.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../nomer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="191.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../floor.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="191.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cost.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="40.0" layoutX="191.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../room.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="123.0" layoutX="26.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../nomer.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

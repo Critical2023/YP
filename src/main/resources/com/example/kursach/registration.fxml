@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane accessibleHelp="gfuwie" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursach.Registration">
+   <children>
+      <Label layoutX="220.0" layoutY="14.0" text="Регистрация">
+         <font>
+            <Font name="Palatino Linotype" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="fio" layoutX="150.0" layoutY="103.0" prefHeight="26.0" prefWidth="158.0" promptText="ФИО" />
+      <TextField fx:id="login" layoutX="150.0" layoutY="162.0" prefHeight="26.0" prefWidth="158.0" promptText="Login" />
+      <TextField fx:id="password" layoutX="150.0" layoutY="215.0" prefHeight="26.0" prefWidth="158.0" promptText="Password" />
+      <Button fx:id="regist" layoutX="244.0" layoutY="318.0" mnemonicParsing="false" style="-fx-background-color: #0021fa;" text="Зарегистрироваться" textFill="WHITE">
+         <font>
+            <Font name="Palatino Linotype Bold" size="12.0" />
+         </font></Button>
+      <TextField fx:id="passport" layoutX="150.0" layoutY="268.0" prefHeight="26.0" prefWidth="157.0" promptText=" Серия и номер паспорта" />
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="103.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../registr.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="103.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../login.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="103.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pasport.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="103.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../vvod.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="127.0" layoutX="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../polzovat.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

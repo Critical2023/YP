@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kursach.EditHotel">
+   <children>
+      <TextField fx:id="idNum" layoutX="85.0" layoutY="175.0" />
+      <TextField fx:id="idStat" layoutX="362.0" layoutY="175.0" />
+      <TextField fx:id="idCost" layoutX="85.0" layoutY="252.0" />
+      <TextField fx:id="idFloor" layoutX="362.0" layoutY="252.0" />
+      <Button fx:id="exit" layoutX="233.0" layoutY="332.0" mnemonicParsing="false" style="-fx-background-color: #0021fa; " text="Сохранить и выйти" textFill="WHITE">
+         <font>
+            <Font name="Palatino Linotype Bold" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="118.0" fitWidth="117.0" layoutX="242.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../hotel1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="195.0" layoutY="14.0" text="Редактирование">
+         <font>
+            <Font name="Palatino Linotype" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="36.0" fitWidth="55.0" layoutX="142.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../room.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="55.0" layoutX="142.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../cost.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="55.0" layoutX="420.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../status.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="55.0" layoutX="420.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../floor.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

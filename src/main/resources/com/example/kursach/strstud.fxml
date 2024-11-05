@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="idContainer" prefHeight="157.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="236.0" prefHeight="150.0" prefWidth="362.0">
+         <children>
+            <VBox prefHeight="150.0" prefWidth="186.0">
+               <children>
+                  <Label fx:id="idCost" prefHeight="42.0" prefWidth="198.0" text="Label" />
+                  <Label fx:id="idFloor" prefHeight="38.0" prefWidth="198.0" text="Label" />
+                  <Label fx:id="idStat" prefHeight="42.0" prefWidth="198.0" text="Label" />
+                  <Label fx:id="idNum" prefHeight="42.0" prefWidth="198.0" text="Label" />
+                  <Label fx:id="idid1" prefHeight="26.0" prefWidth="186.0" text="Label" />
+               </children>
+            </VBox>
+            <VBox prefHeight="150.0" prefWidth="186.0">
+               <children>
+                  <Label fx:id="idCost1" prefHeight="42.0" prefWidth="198.0" text="Стоимость за сутки" />
+                  <Label fx:id="idFloor1" prefHeight="38.0" prefWidth="198.0" text="Этаж" />
+                  <Label fx:id="idStat1" prefHeight="42.0" prefWidth="198.0" text="Статус номера" />
+                  <Label fx:id="idNum1" prefHeight="42.0" prefWidth="198.0" text="Номер комнаты" />
+                  <Label fx:id="idid2" prefHeight="26.0" prefWidth="186.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fx:id="idPhoto" fitHeight="150.0" fitWidth="231.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

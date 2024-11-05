@@ -1,0 +1,19 @@
+services:
+  mariadb:
+    image: mariadb
+    restart: always
+
+    ports:
+      - "13306:3306"
+    command:
+      --init-file=/data/application/init.sql
+
+    environment:
+      MARIADB_DATABASE: kursach
+      MARIADB_USER: javafxTest
+      MARIADB_PASSWORD: changeme
+    volumes:
+      - D:/MariaDBData:/var/lib/mysql
+      - D:/IdeaProjects/kursach/database/init.sql:/data/application/init.sql
+volumes:
+  mariadbvol:
